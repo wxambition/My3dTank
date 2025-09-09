@@ -1,0 +1,73 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "H:\\unity\\unityfile\\My3dTank\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E36891C0-DE35-08FE-ED9D-D54DEA7ED466}|Assembly-CSharp.csproj|h:\\unity\\unityfile\\my3dtank\\assets\\tankbattle\\scripts\\aiinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E36891C0-DE35-08FE-ED9D-D54DEA7ED466}|Assembly-CSharp.csproj|solutionrelative:assets\\tankbattle\\scripts\\aiinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E36891C0-DE35-08FE-ED9D-D54DEA7ED466}|Assembly-CSharp.csproj|H:\\unity\\unityfile\\My3dTank\\assets\\tankbattle\\scripts\\playerinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E36891C0-DE35-08FE-ED9D-D54DEA7ED466}|Assembly-CSharp.csproj|solutionrelative:assets\\tankbattle\\scripts\\playerinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E36891C0-DE35-08FE-ED9D-D54DEA7ED466}|Assembly-CSharp.csproj|H:\\unity\\unityfile\\My3dTank\\assets\\tankbattle\\scripts\\tank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E36891C0-DE35-08FE-ED9D-D54DEA7ED466}|Assembly-CSharp.csproj|solutionrelative:assets\\tankbattle\\scripts\\tank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AIInput.cs",
+              "DocumentMoniker": "H:\\unity\\unityfile\\My3dTank\\Assets\\TankBattle\\Scripts\\AIInput.cs",
+              "RelativeDocumentMoniker": "Assets\\TankBattle\\Scripts\\AIInput.cs",
+              "ToolTip": "H:\\unity\\unityfile\\My3dTank\\Assets\\TankBattle\\Scripts\\AIInput.cs",
+              "RelativeToolTip": "Assets\\TankBattle\\Scripts\\AIInput.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T01:55:09.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerInput.cs",
+              "DocumentMoniker": "H:\\unity\\unityfile\\My3dTank\\Assets\\TankBattle\\Scripts\\PlayerInput.cs",
+              "RelativeDocumentMoniker": "Assets\\TankBattle\\Scripts\\PlayerInput.cs",
+              "ToolTip": "H:\\unity\\unityfile\\My3dTank\\Assets\\TankBattle\\Scripts\\PlayerInput.cs",
+              "RelativeToolTip": "Assets\\TankBattle\\Scripts\\PlayerInput.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAAB0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T01:00:23.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Tank.cs",
+              "DocumentMoniker": "H:\\unity\\unityfile\\My3dTank\\Assets\\TankBattle\\Scripts\\Tank.cs",
+              "RelativeDocumentMoniker": "Assets\\TankBattle\\Scripts\\Tank.cs",
+              "ToolTip": "H:\\unity\\unityfile\\My3dTank\\Assets\\TankBattle\\Scripts\\Tank.cs",
+              "RelativeToolTip": "Assets\\TankBattle\\Scripts\\Tank.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T01:53:06.183Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

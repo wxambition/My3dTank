@@ -1,0 +1,7 @@
+/UserSettings
+/Library
+.p4ignore
+*.csproj
+/Logs
+/obj
+*.sln
