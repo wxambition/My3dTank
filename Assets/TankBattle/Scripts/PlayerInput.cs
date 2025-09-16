@@ -21,7 +21,7 @@ namespace CLTank
         void Update()
         {if(Input.GetKeyDown(Key_Fire))
             {
-                playerTank.Fire();
+                playerTank.Fire(name);
             }
             if (Input.GetKey(Key_Forward))
             {

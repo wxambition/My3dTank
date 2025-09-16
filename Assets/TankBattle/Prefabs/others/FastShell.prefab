@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4083092269811564810}
   - component: {fileID: 1020153367123104755}
   m_Layer: 6
-  m_Name: Shell
+  m_Name: FastShell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9a1a8db0c955464b8c7431e91daedb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 8
   rg: {fileID: 0}
   isSuperShell: 0
 --- !u!54 &4083092269811564810

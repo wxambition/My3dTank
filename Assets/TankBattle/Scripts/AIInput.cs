@@ -6,7 +6,7 @@ namespace CLTank
 {
     public class AIInput : MonoBehaviour
     {
-        public Tank enemyTank;
+        public EnemyTank enemyTank;
         public float timer; //计时器
 
         void Start() { }
@@ -18,17 +18,21 @@ namespace CLTank
             if (timer > 1)
             {
                 timer = 0;
+                int f = Random.Range(0, 2);
+                if(f==0)
+                    enemyTank.Fire(name);//敌人坦克开火
+
                 int d = Random.Range(0, 5);
                 if (d == 0)
-                    enemyTank.direction = Tank.Direction.stop;
+                    enemyTank.direction = EnemyTank.Direction.stop;
                 else if (d == 1)
-                    enemyTank.direction = Tank.Direction.forward;
+                    enemyTank.direction = EnemyTank.Direction.forward;
                 else if (d == 2)
-                    enemyTank.direction = Tank.Direction.backward;
+                    enemyTank.direction = EnemyTank.Direction.backward;
                 else if (d == 3)
-                    enemyTank.direction = Tank.Direction.left;
+                    enemyTank.direction = EnemyTank.Direction.left;
                 else if (d == 4)
-                    enemyTank.direction = Tank.Direction.right;
+                    enemyTank.direction = EnemyTank.Direction.right;
             }
         }
     }

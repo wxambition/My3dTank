@@ -1,90 +1,233 @@
 fileFormatVersion: 2
 guid: f82c8546bfae04b4c9c281ab48b0b7d4
-timeCreated: 1514563644
-licenseType: Store
 ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: Barrel
-    100002: BarrelMount
-    100004: BarrelMount 1
-    100006: Body
-    100008: BodyShake
-    100010: BoneBarrel
-    100012: BoneBarreTilt
-    100014: BoneBody
-    100016: BoneTurret
-    100018: BoneWheel_L1
-    100020: BoneWheel_L2
-    100022: BoneWheel_R1
-    100024: BoneWheel_R2
-    100026: GunEnd
-    100028: root
-    100030: //RootNode
-    100032: Turret
-    100034: Wheel_L1
-    100036: Wheel_L2
-    100038: Wheel_R1
-    100040: Wheel_R2
-    100042: BoneTurretTurn
-    400000: Barrel
-    400002: BarrelMount
-    400004: BarrelMount 1
-    400006: Body
-    400008: BodyShake
-    400010: BoneBarrel
-    400012: BoneBarreTilt
-    400014: BoneBody
-    400016: BoneTurret
-    400018: BoneWheel_L1
-    400020: BoneWheel_L2
-    400022: BoneWheel_R1
-    400024: BoneWheel_R2
-    400026: GunEnd
-    400028: root
-    400030: //RootNode
-    400032: Turret
-    400034: Wheel_L1
-    400036: Wheel_L2
-    400038: Wheel_R1
-    400040: Wheel_R2
-    400042: BoneTurretTurn
-    2300000: Barrel
-    2300002: BarrelMount
-    2300004: BarrelMount 1
-    2300006: Body
-    2300008: Turret
-    2300010: Wheel_L1
-    2300012: Wheel_L2
-    2300014: Wheel_R1
-    2300016: Wheel_R2
-    3300000: Barrel
-    3300002: BarrelMount
-    3300004: BarrelMount 1
-    3300006: Body
-    3300008: Turret
-    3300010: Wheel_L1
-    3300012: Wheel_L2
-    3300014: Wheel_R1
-    3300016: Wheel_R2
-    4300000: Wheel_R2
-    4300002: Wheel_R1
-    4300004: Wheel_L2
-    4300006: Wheel_L1
-    4300008: Barrel
-    4300010: BarrelMount
-    4300012: BarrelMount
-    4300014: Turret
-    4300016: Body
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Barrel
+  - first:
+      1: 100002
+    second: BarrelMount
+  - first:
+      1: 100004
+    second: BarrelMount 1
+  - first:
+      1: 100006
+    second: Body
+  - first:
+      1: 100008
+    second: BodyShake
+  - first:
+      1: 100010
+    second: BoneBarrel
+  - first:
+      1: 100012
+    second: BoneBarreTilt
+  - first:
+      1: 100014
+    second: BoneBody
+  - first:
+      1: 100016
+    second: BoneTurret
+  - first:
+      1: 100018
+    second: BoneWheel_L1
+  - first:
+      1: 100020
+    second: BoneWheel_L2
+  - first:
+      1: 100022
+    second: BoneWheel_R1
+  - first:
+      1: 100024
+    second: BoneWheel_R2
+  - first:
+      1: 100026
+    second: GunEnd
+  - first:
+      1: 100028
+    second: root
+  - first:
+      1: 100030
+    second: //RootNode
+  - first:
+      1: 100032
+    second: Turret
+  - first:
+      1: 100034
+    second: Wheel_L1
+  - first:
+      1: 100036
+    second: Wheel_L2
+  - first:
+      1: 100038
+    second: Wheel_R1
+  - first:
+      1: 100040
+    second: Wheel_R2
+  - first:
+      1: 100042
+    second: BoneTurretTurn
+  - first:
+      4: 400000
+    second: Barrel
+  - first:
+      4: 400002
+    second: BarrelMount
+  - first:
+      4: 400004
+    second: BarrelMount 1
+  - first:
+      4: 400006
+    second: Body
+  - first:
+      4: 400008
+    second: BodyShake
+  - first:
+      4: 400010
+    second: BoneBarrel
+  - first:
+      4: 400012
+    second: BoneBarreTilt
+  - first:
+      4: 400014
+    second: BoneBody
+  - first:
+      4: 400016
+    second: BoneTurret
+  - first:
+      4: 400018
+    second: BoneWheel_L1
+  - first:
+      4: 400020
+    second: BoneWheel_L2
+  - first:
+      4: 400022
+    second: BoneWheel_R1
+  - first:
+      4: 400024
+    second: BoneWheel_R2
+  - first:
+      4: 400026
+    second: GunEnd
+  - first:
+      4: 400028
+    second: root
+  - first:
+      4: 400030
+    second: //RootNode
+  - first:
+      4: 400032
+    second: Turret
+  - first:
+      4: 400034
+    second: Wheel_L1
+  - first:
+      4: 400036
+    second: Wheel_L2
+  - first:
+      4: 400038
+    second: Wheel_R1
+  - first:
+      4: 400040
+    second: Wheel_R2
+  - first:
+      4: 400042
+    second: BoneTurretTurn
+  - first:
+      23: 2300000
+    second: Barrel
+  - first:
+      23: 2300002
+    second: BarrelMount
+  - first:
+      23: 2300004
+    second: BarrelMount 1
+  - first:
+      23: 2300006
+    second: Body
+  - first:
+      23: 2300008
+    second: Turret
+  - first:
+      23: 2300010
+    second: Wheel_L1
+  - first:
+      23: 2300012
+    second: Wheel_L2
+  - first:
+      23: 2300014
+    second: Wheel_R1
+  - first:
+      23: 2300016
+    second: Wheel_R2
+  - first:
+      33: 3300000
+    second: Barrel
+  - first:
+      33: 3300002
+    second: BarrelMount
+  - first:
+      33: 3300004
+    second: BarrelMount 1
+  - first:
+      33: 3300006
+    second: Body
+  - first:
+      33: 3300008
+    second: Turret
+  - first:
+      33: 3300010
+    second: Wheel_L1
+  - first:
+      33: 3300012
+    second: Wheel_L2
+  - first:
+      33: 3300014
+    second: Wheel_R1
+  - first:
+      33: 3300016
+    second: Wheel_R2
+  - first:
+      43: 4300000
+    second: Wheel_R2
+  - first:
+      43: 4300002
+    second: Wheel_R1
+  - first:
+      43: 4300004
+    second: Wheel_L2
+  - first:
+      43: 4300006
+    second: Wheel_L1
+  - first:
+      43: 4300008
+    second: Barrel
+  - first:
+      43: 4300010
+    second: BarrelMount
+  - first:
+      43: 4300012
+    second: BarrelMount
+  - first:
+      43: 4300014
+    second: Turret
+  - first:
+      43: 4300016
+    second: Body
+  externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -92,12 +235,15 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 1
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -105,26 +251,49 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 0
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -134,14 +303,19 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

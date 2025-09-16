@@ -8,6 +8,7 @@ namespace CLTank
     {
         public float speed = 5;
         public Rigidbody rg; //炮弹刚体
+        public bool isSuperShell;
 
         void Start()
         {
@@ -23,7 +24,16 @@ namespace CLTank
         private void OnCollisionEnter(Collision collision)
         {
             Debug.Log(collision.gameObject.name);
-            if(collision.gameObject.name=="Brick")
+            var go = collision.gameObject;
+            //if(collision.gameObject.name=="Brick")
+            if (go.tag == "Brick") //go.CompareTag("Brick")
+            {
+                Destroy(go);
+            }
+            else if (go.CompareTag("Cement") && isSuperShell)
+            {
+                Destroy(go);
+            }
             Destroy(gameObject); //销毁炮弹对象
         }
     }

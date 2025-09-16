@@ -23,10 +23,15 @@ namespace CLTank
         public Transform shellPos; //炮弹产生的位置
         public GameObject shellObj; //炮弹对象
 
+        public AudioSource[] audioSource; //声音源
+        public AudioClip audioFire;//开火声音
+        public AudioClip audioDestroy;//销毁声音
+
         void Start()
         {
             rig = GetComponent<Rigidbody>();
             animator = GetComponent<Animator>();
+            
         }
 
         void Update()
@@ -34,14 +39,16 @@ namespace CLTank
             MoveTank(direction);
         }
 
-        void MoveTank(Direction dir)
+       protected void MoveTank(Direction dir)
         {
             animator.SetBool("Move", true);
+            PlayAudio(audioSource[0]);
             switch (dir)
             {
                 case Direction.stop:
                     rig.velocity = Vector3.zero;
                     animator.SetBool("Move", false);
+                    audioSource[0].Stop();
                     break;
                 case Direction.forward:
                     //GetComponent<Transform>()等价transform
@@ -71,9 +78,26 @@ namespace CLTank
             }*/
         }
 
-        public void Fire()
-        {
+        public void Fire(string name)
+        {if (shellObj != null)
+                return;
+
             shellObj = Instantiate(shellPrefab, shellPos.position, shellPos.rotation);
+            shellObj.name = name+"_Shell";
+            PlayAudio(audioSource[1],audioFire);
+        }
+
+        public void PlayAudio(AudioSource audio)
+        {
+            if(audio.isPlaying)
+                return;
+            audio.Play();
+        }
+
+        public void PlayAudio(AudioSource audio,AudioClip clip)//int audioId
+        {
+            audio.clip = clip;
+            audio.Play();
         }
     }
 }
