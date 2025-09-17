@@ -15,7 +15,7 @@ namespace CLTank
         }
 
         public EnemyTankType enemyTankType;
-        public int hitPoint;//生命值
+        public int hitPoint; //生命值
 
         void Start() { }
 
@@ -24,10 +24,32 @@ namespace CLTank
             var _name = collision.gameObject.name;
             if (_name.Contains("Player1"))
             {
+                if (enemyTankType == EnemyTankType.heavy)
+                {
+                    hitPoint--;
+                    if (hitPoint > 0)
+                        return;
+                }
                 animator.SetTrigger("Dead");
                 PlayAudio(audioSource[1], audioDestroy);
+                particle.Play();  //播放爆炸特效
                 Destroy(gameObject, 1f); //销毁自己（敌人坦克）
             }
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {   //var go=other.gameObject;
+            //if(go.CompareTag())
+            var tag = other.tag;
+            if (tag == "Trees")
+                SetSpeed(0.8f);
+            else if (tag == "Ice")
+                SetSpeed(1.2f);
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            SetSpeed(1);
         }
     }
 }

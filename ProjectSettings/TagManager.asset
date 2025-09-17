@@ -12,6 +12,8 @@ TagManager:
   - Spade
   - Star
   - Cement
+  - Trees
+  - Ice
   layers:
   - Default
   - TransparentFX

@@ -24,14 +24,19 @@ namespace CLTank
         public GameObject shellObj; //炮弹对象
 
         public AudioSource[] audioSource; //声音源
-        public AudioClip audioFire;//开火声音
-        public AudioClip audioDestroy;//销毁声音
+        public AudioClip audioFire; //开火声音
+        public AudioClip audioDestroy; //销毁声音
+        public ParticleSystem particle; //爆炸特效
+
+        public float timeDelay = 0.2f; //发射炮弹间隔的延迟
 
         void Start()
         {
             rig = GetComponent<Rigidbody>();
             animator = GetComponent<Animator>();
-            
+
+            particle.Stop();
+            timeDelay = 0.2f;
         }
 
         void Update()
@@ -39,7 +44,7 @@ namespace CLTank
             MoveTank(direction);
         }
 
-       protected void MoveTank(Direction dir)
+        protected void MoveTank(Direction dir)
         {
             animator.SetBool("Move", true);
             PlayAudio(audioSource[0]);
@@ -78,26 +83,32 @@ namespace CLTank
             }*/
         }
 
-        public void Fire(string name)
-        {if (shellObj != null)
+        public virtual void Fire(string name)
+        {
+            if (shellObj != null)
                 return;
 
             shellObj = Instantiate(shellPrefab, shellPos.position, shellPos.rotation);
-            shellObj.name = name+"_Shell";
-            PlayAudio(audioSource[1],audioFire);
+            shellObj.name = name + "_Shell";
+            PlayAudio(audioSource[1], audioFire);
         }
 
         public void PlayAudio(AudioSource audio)
         {
-            if(audio.isPlaying)
+            if (audio.isPlaying)
                 return;
             audio.Play();
         }
 
-        public void PlayAudio(AudioSource audio,AudioClip clip)//int audioId
+        public void PlayAudio(AudioSource audio, AudioClip clip) //int audioId
         {
             audio.clip = clip;
             audio.Play();
+        }
+
+        public void SetSpeed(float newSpeed)
+        {
+            speed = newSpeed;
         }
     }
 }
